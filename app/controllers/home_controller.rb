@@ -3,7 +3,7 @@ class HomeController < ApplicationController
     @articles = Article.all
   end
 
-  def read
+  def read 
     @article = Article.where(id: params[:article_id]).first
   end
 
@@ -18,8 +18,8 @@ class HomeController < ApplicationController
     end
   end
 
-  def about
-  end
+  def About
+  end 
 
   def search
     keyword = params[:keyword]
